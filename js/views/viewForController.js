@@ -1,14 +1,13 @@
 
 import { div } from "../libs/html.js";
-import {View} from"./view.js";
+import { View } from "./view.js";
 
-
-export class ViewForController extends View{
-        constructor(controller, parent){
+export class ViewForController extends View {
+    constructor(controller, parent) {
         super(parent);
 
         this.controller = controller;
-        this.fade = div(this.container,{className: 'fade'});
-        this.elementContainer = div(this.container,{className: 'elementContainer'});
+        this.fade = div(this.container, { className: 'fade' });
+        this.elementContainer = div(this.container, { className: 'elementContainer' });
     }
 }
