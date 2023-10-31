@@ -10,7 +10,7 @@
     return createElement('img', parent, attributes);
  }
 
- export const  createElement= function(type, parent, attributes){
+const  createElement= function(type, parent, attributes){
     let element= document.createElement(type);
 
     parent.appendChild(element);

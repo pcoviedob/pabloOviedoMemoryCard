@@ -11,3 +11,18 @@
     background-color: var(--secondary-color);
     position: fixed;
 }
+
+.navbarController_backBtn {
+    width: var(--navbar-height);
+    height: var(--navbar-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+    cursor: pointer;
+
+    font-size: 30px;
+    color: white;
+
+}

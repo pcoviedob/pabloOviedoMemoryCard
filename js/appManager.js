@@ -1,6 +1,7 @@
 
 import { MenuController } from "./controllers/navbarController/menuController/menuController.js";
 import { NavbarController } from "./controllers/navbarController/navbarController/navbarController.js";
+import { SCORES } from "./libs/constants.js";
 import { div, p, img } from "./libs/html.js";
 
 export class AppManager {
@@ -14,5 +15,38 @@ export class AppManager {
         this.controllerContainer = div(this.mainContainer, { className: 'controllerContainer' })
 
         this.menuController = new MenuController(this, this.controllerContainer);
+        this.currentController = null;
+    }
+
+    showController(type){
+        switch (type){
+            case NONE:
+                break;
+            case MENU:
+                if(this.currentController !== null){
+                    this.currentController.delete();
+                    this.currentController = null;
+                    this.navbarController.hideBackBtn();
+                }
+
+                break;
+            case LOGIN:
+                // this.currentController = new LoginController(this, this.controllerContainer)
+                break;
+            case PLAY:
+                break;
+            case SCORES:
+                break;
+                case DIFFICULTY:
+                break;
+            case THEMES:
+                break;
+            case CREDITS:
+                break;
+            default:
+                break;
+        }
+
     }
 }
+
