@@ -1,7 +1,16 @@
 
+// import { LoginController } from "./controllers/loginController/loginController.js";
+import { LoginController } from "./controllers/loginController/loginController.js";
 import { MenuController } from "./controllers/navbarController/menuController/menuController.js";
 import { NavbarController } from "./controllers/navbarController/navbarController/navbarController.js";
 import { SCORES } from "./libs/constants.js";
+import { NONE } from "./libs/constants.js";
+import { LOGIN } from "./libs/constants.js";
+import { PLAY } from "./libs/constants.js";
+import { DIFFICULTY } from "./libs/constants.js";
+import { THEMES } from "./libs/constants.js";
+import { CREDITS } from "./libs/constants.js";
+import { MENU } from "./libs/constants.js";
 import { div, p, img } from "./libs/html.js";
 
 export class AppManager {
@@ -31,7 +40,7 @@ export class AppManager {
 
                 break;
             case LOGIN:
-                // this.currentController = new LoginController(this, this.controllerContainer)
+                this.currentController = new LoginController(this, this.controllerContainer)
                 break;
             case PLAY:
                 break;

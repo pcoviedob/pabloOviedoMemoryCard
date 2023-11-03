@@ -1,3 +1,9 @@
+import { LOGIN } from "../libs/constants.js";
+import { PLAY } from "../libs/constants.js";
+import { SCORES } from "../libs/constants.js";
+import { DIFFICULTY } from "../libs/constants.js";
+import { THEMES } from "../libs/constants.js";
+import { CREDITS } from "../libs/constants.js";
 import { div } from "../libs/html.js";
 import { ViewForController } from "./viewForController.js";
 
@@ -7,7 +13,7 @@ export class MenuView extends ViewForController {
         this.container.className = 'menuController';
        
 
-        this.loginBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'Login', onclick: this.onLoginBtn.bind(this)});
+        this.loginBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'LOGIN', onclick: this.onLoginBtn.bind(this)});
         this.playBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'PLAY', onclick: this.onPlayBtn.bind(this)});
         this.scoresBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'SCORES', onclick: this.onScoresBtn.bind(this)});
         this.difficultyBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'DIFFICULTY', onclick: this.onDifficultyBtn.bind(this)});
@@ -18,20 +24,20 @@ export class MenuView extends ViewForController {
 onLoginBtn(){
     this.controller.appManager.showController(LOGIN);
 }
-onLoginBtn(){
+
+onPlayBtn(){
     this.controller.appManager.showController(PLAY);
 }
-onPlayBtn(){
+
+onScoresBtn(){
     this.controller.appManager.showController(SCORES);
 }
-onScoresBtn(){
+onDifficultyBtn(){
     this.controller.appManager.showController(DIFFICULTY);
 }
-onDifficultyBtn(){
-    this.controller.appManager.showController(THEMES);
-}
+
 onThemesBtn(){
-    this.controller.appManager.showController(CREDITS);
+    this.controller.appManager.showController(THEMES);
 }
 onCreditsBtn(){
     this.controller.appManager.showController(CREDITS);
