@@ -8,6 +8,7 @@
 .navbarController_backBtn {
     width: var(--navbar-height);
     height: var(--navbar-height);
+
     display: flex;
     justify-content: center;
     align-items: center;

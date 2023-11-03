@@ -58,6 +58,10 @@ h2 {
     width: 80%;
     height: 80%;
     background-color: var(--blue-deep);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -76,4 +80,8 @@ h2 {
 
     user-select: none;
     cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
 }

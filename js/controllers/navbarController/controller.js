@@ -7,5 +7,8 @@ export class Controller{
     this.view = null;
     
  }
+ delete(){
+    this.view.delete()
+ }
 
 }

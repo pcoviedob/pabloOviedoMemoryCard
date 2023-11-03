@@ -3,6 +3,7 @@
 import { LoginController } from "./controllers/loginController/loginController.js";
 import { MenuController } from "./controllers/navbarController/menuController/menuController.js";
 import { NavbarController } from "./controllers/navbarController/navbarController/navbarController.js";
+import { PlayController } from "./controllers/playController/playController.js";
 import { SCORES } from "./libs/constants.js";
 import { NONE } from "./libs/constants.js";
 import { LOGIN } from "./libs/constants.js";
@@ -28,6 +29,7 @@ export class AppManager {
     }
 
     showController(type){
+        this.navbarController.showBackBtn();
         switch (type){
             case NONE:
                 break;
@@ -43,6 +45,7 @@ export class AppManager {
                 this.currentController = new LoginController(this, this.controllerContainer)
                 break;
             case PLAY:
+                this.currentController = new PlayController(this, this.controllerContainer)
                 break;
             case SCORES:
                 break;

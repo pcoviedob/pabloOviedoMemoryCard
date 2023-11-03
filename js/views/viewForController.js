@@ -10,7 +10,7 @@ export class ViewForController extends View {
         this.fade = div(this.container, { className: 'fade' });
         this.elementContainer = div(this.container, { className: 'elementContainer' });
         // container con background para botones
-        this.btnContainer = div(this.container, { className: 'btnContainer' });
+        // this.btnContainer = div(this.elementContainer, { className: 'btnContainer' });
     }
 
     setStartPosition(){

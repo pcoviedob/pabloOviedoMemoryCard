@@ -9,7 +9,7 @@ export class View {
 
 
     delete(){
-this.parent.removeChild
+     this.parent.removeChild(this.container);
  }
 
 }
