@@ -1,15 +1,13 @@
 
 import { Controller } from "../navbarController/controller.js";
-import { LoginView } from "./loginView.js";
+import { ThemesView } from "./themesView.js";
 
 
-export class LoginController extends Controller {
+export class ThemesController extends Controller {
     constructor(appManager, parent) {
         super(appManager, parent);
-        this.view = new LoginView(this, parent);
+        this.view = new ThemesView(this, parent);
     }
-
-   
 
 
 }

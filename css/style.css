@@ -4,7 +4,7 @@
     --blue-deep: #001524;
     --navbar-height: 60px;
     --bacground-color: #FFECD1;
-    --fade-color: rgb(0, 0, 0, 0.5);
+    --fade-color: rgb(0, 0, 0, 0.75);
 
 }
 
@@ -41,6 +41,7 @@ h2 {
     width: 100%;
     height: 100%;
     background-color: var(--fade-color);
+    opacity: 0;
 }
 
 .elementContainer {

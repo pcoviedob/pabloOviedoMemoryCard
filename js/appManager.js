@@ -1,9 +1,13 @@
 
 // import { LoginController } from "./controllers/loginController/loginController.js";
+import { CreditsController } from "./controllers/creditsController/creditsController.js";
+import { DifficultyController } from "./controllers/difficultyController/difficultyController.js";
 import { LoginController } from "./controllers/loginController/loginController.js";
 import { MenuController } from "./controllers/navbarController/menuController/menuController.js";
 import { NavbarController } from "./controllers/navbarController/navbarController/navbarController.js";
 import { PlayController } from "./controllers/playController/playController.js";
+import { ScoresController } from "./controllers/scoresController/ScoresController.js";
+import { ThemesController } from "./controllers/themesController/themesController.js";
 import { SCORES } from "./libs/constants.js";
 import { NONE } from "./libs/constants.js";
 import { LOGIN } from "./libs/constants.js";
@@ -48,12 +52,16 @@ export class AppManager {
                 this.currentController = new PlayController(this, this.controllerContainer)
                 break;
             case SCORES:
+                this.currentController = new ScoresController(this, this.controllerContainer)
                 break;
                 case DIFFICULTY:
+                    this.currentController = new DifficultyController(this, this.controllerContainer)
                 break;
             case THEMES:
+                this.currentController = new ThemesController(this, this.controllerContainer)
                 break;
             case CREDITS:
+                this.currentController = new CreditsController(this, this.controllerContainer)
                 break;
             default:
                 break;

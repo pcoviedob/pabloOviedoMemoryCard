@@ -1,15 +1,15 @@
 
 import { Controller } from "../navbarController/controller.js";
-import { LoginView } from "./loginView.js";
+import { ScoresView } from "./ScoresView.js";
 
 
-export class LoginController extends Controller {
+
+
+export class ScoresController extends Controller {
     constructor(appManager, parent) {
         super(appManager, parent);
-        this.view = new LoginView(this, parent);
+        this.view = new ScoresView(this, parent);
     }
-
-   
 
 
 }

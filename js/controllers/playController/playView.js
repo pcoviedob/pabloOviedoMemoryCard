@@ -10,7 +10,8 @@ export class PlayView extends ViewForController {
         this.container.className = 'loginController';
 
         this.playBtn = div(this.elementContainer,{className: 'GameBtn', innerHTML: 'PLAY', onclick: this.onPlayBtn.bind(this)});
-
+        this.setStartPosition();
+        this.moveIn();
     }
 
 onPlayBtn(){
