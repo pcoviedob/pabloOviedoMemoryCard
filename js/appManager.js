@@ -30,6 +30,7 @@ export class AppManager {
 
         this.menuController = new MenuController(this, this.controllerContainer);
         this.currentController = null;
+        this.showController(PLAY);
     }
 
     showController(type){

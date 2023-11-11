@@ -1,5 +1,5 @@
 
-import { Controller } from "../navbarController/controller.js";
+import { Controller } from "../controller.js";
 import { LoginView } from "./loginView.js";
 
 

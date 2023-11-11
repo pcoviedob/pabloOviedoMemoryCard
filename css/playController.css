@@ -1,0 +1,39 @@
+.playController_hudContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 60px;
+}
+
+.playController_cardsLbl {
+
+    width: 30px;
+    font-size: 30px;
+}
+
+.playController_resetBtn {
+    width: 30px;
+    font-size: 30px;
+}
+
+.playController_movesLbl {
+    width: 30px;
+    font-size: 30px;
+}
+
+.playController_playLbl {
+    width: 30px;
+    font-size: 30px;
+}
+
+.playController_timeLbl {
+    width: 30px;
+    font-size: 30px;
+}
+
+.playController_cardsContainer {
+    width: 90%;
+    height: auto;
+
+}

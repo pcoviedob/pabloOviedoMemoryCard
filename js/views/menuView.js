@@ -13,12 +13,12 @@ export class MenuView extends ViewForController {
         this.container.className = 'menuController';
        
 
-        this.loginBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'LOGIN', onclick: this.onLoginBtn.bind(this)});
-        this.playBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'PLAY', onclick: this.onPlayBtn.bind(this)});
-        this.scoresBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'SCORES', onclick: this.onScoresBtn.bind(this)});
-        this.difficultyBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'DIFFICULTY', onclick: this.onDifficultyBtn.bind(this)});
-        this.themesBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'THEMES', onclick: this.onThemesBtn.bind(this)});
-        this.creditsBtn = div(this.elementContainer,{className: 'gameBtn', innerHTML: 'CREDITS', onclick: this.onCreditsBtn.bind(this)});
+        this.loginBtn = div(this.elementContainer,{className: 'gameLoginBtn', innerHTML: 'LOGIN', onclick: this.onLoginBtn.bind(this)});
+        this.playBtn = div(this.elementContainer,{className: 'gamePlayBtn', innerHTML: 'PLAY', onclick: this.onPlayBtn.bind(this)});
+        this.scoresBtn = div(this.elementContainer,{className: 'gameScoresBtn', innerHTML: 'SCORES', onclick: this.onScoresBtn.bind(this)});
+        this.difficultyBtn = div(this.elementContainer,{className: 'gameDifficultyBtn', innerHTML: 'DIFFICULTY', onclick: this.onDifficultyBtn.bind(this)});
+        this.themesBtn = div(this.elementContainer,{className: 'gameThemesBtn', innerHTML: 'THEMES', onclick: this.onThemesBtn.bind(this)});
+        this.creditsBtn = div(this.elementContainer,{className: 'gameCreditsBtn', innerHTML: 'CREDITS', onclick: this.onCreditsBtn.bind(this)});
 
 
         // this.loginBtn = div(this.btnContainer,{className: 'gameBtn', innerHTML: 'LOGIN', onclick: this.onLoginBtn.bind(this)});

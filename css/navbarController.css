@@ -1,7 +1,7 @@
 .navbarController {
     width: 100%;
     height: var(--navbar-height);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     position: fixed;
 }
 

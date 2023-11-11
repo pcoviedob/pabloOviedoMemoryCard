@@ -1,5 +1,5 @@
 import { MenuView } from "../../../views/menuView.js";
-import { Controller } from "../controller.js";
+import { Controller } from "../../controller.js";
 
 export class MenuController extends Controller {
     constructor(appManager, parent) {

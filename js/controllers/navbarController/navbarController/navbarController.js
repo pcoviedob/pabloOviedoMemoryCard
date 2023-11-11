@@ -1,7 +1,7 @@
 import { View } from "../../../views/view.js";
 import { div } from "../../../libs/html.js";
 import { MENU } from "../../../libs/constants.js";
-import {Controller} from "../controller.js";
+import {Controller} from "../../controller.js";
 
 
 export class NavbarController extends Controller{
