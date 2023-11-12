@@ -6,7 +6,7 @@ export class PlayService extends Service{
     }
 
 
-    getCards() {
+  async getCards() {
   let request = new XMLHttpRequest();
   request.open('GET', '../js/services/playService/cards.json');
   request.onload = () => {

@@ -14,3 +14,4 @@ export class CardView extends View{
         // const onCardSetectedEvent 
     }
 }
+

@@ -33,7 +33,7 @@ export class AppManager {
         this.showController(PLAY);
     }
 
-    showController(type){
+    async showController(type){
         this.navbarController.showBackBtn();
         switch (type){
             case NONE:
@@ -51,6 +51,7 @@ export class AppManager {
                 break;
             case PLAY:
                 this.currentController = new PlayController(this, this.controllerContainer)
+                await this.currentController.getCards();
                 break;
             case SCORES:
                 this.currentController = new ScoresController(this, this.controllerContainer)

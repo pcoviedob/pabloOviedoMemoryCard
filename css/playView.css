@@ -1,0 +1,57 @@
+.playController_cardsContainer {
+    width: 600px;
+    height: 600px;
+}
+
+.playController_hudContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.playController_hudContainer2 {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+}
+
+.playController_mainHudContainer {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.playController_cardsLbl {
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.playController_movesLbl {
+
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.playController_timeLbl {
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.playController_playLbl {
+    font-size: 70px;
+    color: var(--secondary-color);
+
+}
+
+.gameResetBtn {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: var(--light-color);
+
+    background-color: #CD0A39;
+}

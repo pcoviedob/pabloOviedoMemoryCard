@@ -12,9 +12,9 @@ export class PlayController extends Controller {
         this.service = new PlayService(this);
         this.view.updateHUD(0,0);
         // this.cards = [];
-        this.service.getCards();
-        this.cards= this.service.getCards();
-        this.view.showCards(this.cards);
+        // this.service.getCards();
+        // this.cards= this.service.getCards();
+        // this.view.showCards(this.cards);
         // this.service.getCards().then(cards => {
         // this.cards = cards;
         // this.view.showCards(this.cards);
@@ -28,6 +28,14 @@ export class PlayController extends Controller {
 // });
 
 
+    }
+
+// receiveCards(cards){
+//     this.cards = cards;
+//     this.view.showCards(this.cards);
+// }
+ getCards() {
+        return this.service.getCards();
     }
 receiveCards(cards){
     this.cards = cards;

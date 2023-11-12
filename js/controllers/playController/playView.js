@@ -10,16 +10,19 @@ export class PlayView extends ViewForController {
     constructor(controller, parent) {
         super(controller, parent);
         this.container.className = 'loginController';
-
-        let hudContainer = div(this.elementContainer, {className:'playController_hudContainer'})
-        this.cardsLbl = p(hudContainer, {className:'playController_cardsLbl'})
-        this.movesLbl = p(hudContainer, {className:'playController_movesLbl'})
-        this.timeLbl = p(hudContainer, {className:'playController_timeLbl'})
-        this.playLbl = p(hudContainer, {className:'playController_playLbl'})
-
-        this.resetBtn = div(hudContainer,{className: 'gameBtn .gameLoginBtn', innerHTML: 'RESET', onclick: this.onResetBtn.bind(this)});
         
-        this.cardsContainer = img(this.elementContainer,{src:'src', className: 'playController_cardsContainer'})
+        let mainHudContainer = div(this.elementContainer, {className:'playController_mainHudContainer'})
+        let hudContainer2= div(mainHudContainer, {className:'playController_hudContainer2'})
+        let hudContainer = div(mainHudContainer, {className:'playController_hudContainer'})
+        this.timeLbl = p(hudContainer, {className:'playController_timeLbl'})
+        this.playLbl = p(hudContainer, {className:'playController_playLbl', innerHTML: 'PLAY'})
+        this.resetBtn = div(hudContainer,{className: 'gameResetBtn', innerHTML: 'RESET', onclick: this.onResetBtn.bind(this)});
+        
+        this.cardsLbl = p(hudContainer2, {className:'playController_cardsLbl'})
+        this.movesLbl = p(hudContainer2, {className:'playController_movesLbl'})
+
+       
+        this.cardsContainer = img(this.elementContainer,{ className: 'playController_cardsContainer'})
 
         this.setStartPosition();
         this.moveIn();
@@ -30,7 +33,7 @@ onResetBtn(){
 }
 updateHUD(moves, time){
     this.movesLbl.innerHTML =`MOVES: ${moves}`;
-    this.timeLbl.innerHTML= `TIME: ${time}`;
+    this.timeLbl.innerHTML= `00:00: ${time}`;
     
 }
 

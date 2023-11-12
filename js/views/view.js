@@ -6,6 +6,7 @@ export class View {
       this.parent = parent;
       this.container = div(parent, null);
       
+      
    }
 
 
