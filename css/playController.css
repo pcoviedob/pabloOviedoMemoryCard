@@ -33,6 +33,7 @@
 }
 
 .playController_cardsContainer {
+    margin-top: 5px;
     width: 90%;
     height: auto;
 

@@ -20,19 +20,10 @@ export class MenuView extends ViewForController {
         this.themesBtn = div(this.elementContainer,{className: 'gameThemesBtn', innerHTML: 'THEMES', onclick: this.onThemesBtn.bind(this)});
         this.creditsBtn = div(this.elementContainer,{className: 'gameCreditsBtn', innerHTML: 'CREDITS', onclick: this.onCreditsBtn.bind(this)});
 
-
-        // this.loginBtn = div(this.btnContainer,{className: 'gameBtn', innerHTML: 'LOGIN', onclick: this.onLoginBtn.bind(this)});
-        // this.playBtn = div(this.btnContainer,{className: 'gameBtn', innerHTML: 'PLAY', onclick: this.onPlayBtn.bind(this)});
-        // this.scoresBtn = div(this.btnContainer,{className: 'gameBtn', innerHTML: 'SCORES', onclick: this.onScoresBtn.bind(this)});
-        // this.difficultyBtn = div(this.btnContainer,{className: 'gameBtn', innerHTML: 'DIFFICULTY', onclick: this.onDifficultyBtn.bind(this)});
-        // this.themesBtn = div(this.btnContainer,{className: 'gameBtn', innerHTML: 'THEMES', onclick: this.onThemesBtn.bind(this)});
-        // this.creditsBtn = div(this.btnContainer,{className: 'gameBtn', innerHTML: 'CREDITS', onclick: this.onCreditsBtn.bind(this)});
     }
 
 onLoginBtn(){
     this.controller.appManager.showController(LOGIN);
-  
-
 }
 
 onPlayBtn(){
@@ -42,6 +33,7 @@ onPlayBtn(){
 onScoresBtn(){
     this.controller.appManager.showController(SCORES);
 }
+
 onDifficultyBtn(){
     this.controller.appManager.showController(DIFFICULTY);
 }
@@ -49,6 +41,7 @@ onDifficultyBtn(){
 onThemesBtn(){
     this.controller.appManager.showController(THEMES);
 }
+
 onCreditsBtn(){
     this.controller.appManager.showController(CREDITS);
 }

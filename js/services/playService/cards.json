@@ -47,6 +47,54 @@
         {
             "id": 12,
             "src": "assets/Brook.png"
+        },
+        {
+            "id": 1,
+            "src": "assets/Luffy.png"
+        },
+        {
+            "id": 2,
+            "src": "assets/Zoro.png"
+        },
+        {
+            "id": 3,
+            "src": "assets/Sanji.png"
+        },
+        {
+            "id": 4,
+            "src": "assets/Nami.png"
+        },
+        {
+            "id": 5,
+            "src": "assets/Nico.png"
+        },
+        {
+            "id": 6,
+            "src": "assets/Choper.png"
+        },
+        {
+            "id": 7,
+            "src": "assets/Franky.png"
+        },
+        {
+            "id": 8,
+            "src": "assets/Usop.png"
+        },
+        {
+            "id": 9,
+            "src": "assets/Jimbe.png"
+        },
+        {
+            "id": 10,
+            "src": "assets/Sabo.png"
+        },
+        {
+            "id": 11,
+            "src": "assets/Ace.png"
+        },
+        {
+            "id": 12,
+            "src": "assets/Brook.png"
         }
-    ]
-}
+            ]
+        }

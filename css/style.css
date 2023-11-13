@@ -6,6 +6,9 @@
         --bacground-color: #001524;
     --navbar-height: 60px;
     --fade-color: rgb(0, 0, 0, 0.75);
+    --card-normal: red;
+        --card-show: rgb(13, 0, 255);
+        --card-discocovered: rgb(9, 255, 0);
 
 }
 

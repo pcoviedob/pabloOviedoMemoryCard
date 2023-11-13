@@ -5,9 +5,9 @@
 
 export class Controller{
  constructor(appManager, parent){
+   this.appManager = appManager;
    this.service = null;
-    this.appManager = appManager;
-    this.view = null;
+   this.view = null;
     
  }
  delete(){

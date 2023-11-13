@@ -1,5 +1,12 @@
-.cardView {
-    position: absolute;
+.cardView_img {
+    background-color: var(--card-normal);
     width: 150px;
     height: 150px;
+}
+.cardView_show {
+    background-color: var(--card-show);
+}
+
+.cardView_discovered {
+    background-color: var(--card-discovered);
 }
