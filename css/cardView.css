@@ -1,12 +1,16 @@
-.cardView_img {
-    background-color: var(--card-normal);
-    width: 150px;
-    height: 150px;
+.cardView_normal {
+    background-image: url('../assets/wood.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+
+
 }
-.cardView_show {
-    background-color: var(--card-show);
+.cardView_img {
+width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
 }
 
-.cardView_discovered {
-    background-color: var(--card-discovered);
-}

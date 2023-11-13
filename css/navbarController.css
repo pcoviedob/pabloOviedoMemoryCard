@@ -6,6 +6,7 @@
 }
 
 .navbarController_backBtn {
+    position: fixed;
     width: var(--navbar-height);
     height: var(--navbar-height);
 

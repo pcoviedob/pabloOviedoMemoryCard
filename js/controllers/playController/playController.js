@@ -63,15 +63,14 @@ onCardSelected(event){
 }
 checkCardViews(){
     if(this.cardView1.card.id === this.cardView2.card.id){
-        this.cardView1.discovered();
-        this.cardView2.discovered();
+       
         this.clearCardView();
 
 
     }else{
+
         this.showingTimer = window.setTimeout(this.hideCardDismatch.bind(this),1000);
-        this.cardView1.hide();
-        this.cardView2.hide();
+      
     }
 }
 hideCardDismatch(){

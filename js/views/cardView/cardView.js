@@ -7,10 +7,11 @@ export class CardView extends View{
     constructor(parent, card){
         super(parent)
         this.card = card;
-        this.container.className = 'cardView_img';
+        this.container.className = 'cardView_normal';
         
-        this.container.classList.add('cardView_normal');
+        // this.container.classList.add('cardView_normal');
         // this.imgElement = img(this.container, { src: this.card.src, className: 'cardView_img' });
+       
        
         this.container.onclick = this.onCardSelected.bind(this);
 
@@ -21,15 +22,18 @@ export class CardView extends View{
         this.imgElement = img(this.container, { src: this.card.src, className: 'cardView_img' });
        
     }
-    discovered(){
-        this.container.classList.remove('cardView_show');
-        this.container.classList.add('cardView_discovered');
+    // discovered(){
+        //   this.imgElement = img(this.container, { src: this.card.src, className: 'cardView_img' });
+       
+        // this.container.classList.remove('cardView_show');
+        // this.container.classList.add('cardView_discovered');
 
-    }
+    // }
     hide(){
         this.container.innerHTML = '';
-        this.container.classList.remove('cardView_show');
-        this.container.classList.remove('cardView_discovered');
+        // this.container.classList.remove('cardView_show');
+        // this.container.classList.remove('cardView_discovered');
+        //  this.imgElement2 = img(this.container, { src:'assets/wood.jpg', className: 'cardView_hidden' });
     }
 
     onCardSelected(){
