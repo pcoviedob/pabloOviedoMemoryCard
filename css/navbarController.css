@@ -3,11 +3,14 @@
     height: var(--navbar-height);
     background-color: var(--primary-color);
     position: fixed;
+    /* display: flex;
+            align-content: center;
+            justify-content: center; */
 }
 
 .navbarController_backBtn {
     position: fixed;
-    width: var(--navbar-height);
+
     height: var(--navbar-height);
 
     display: flex;
@@ -20,4 +23,8 @@
     font-size: 30px;
     color: white;
 
+}
+.gameTittle {
+    font-size: 30px;
+    color: var(--primary-color);
 }

@@ -70,9 +70,13 @@ h2 {
 
 
 }
+.subTittleMenu {
+    font-size: 35px;
+    color: var(--light-color);
+}
 
 .gamenBtn {
-    width: 80%;
+    /* /* width: 80%;
     height: 50px;
     background-color: var(--secondary-color);
     font-size: 25p, x;
@@ -82,7 +86,7 @@ h2 {
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        margin-bottom: 5px;
+            */ margin-bottom: 45px;
     
         user-select: none;
         cursor: pointer;
@@ -99,7 +103,7 @@ h2 {
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     
         user-select: none;
         cursor: pointer;
@@ -116,7 +120,7 @@ h2 {
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     
         user-select: none;
         cursor: pointer;
@@ -133,15 +137,16 @@ h2 {
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     
         user-select: none;
         cursor: pointer;
     }
     
     .gameScoresBtn {
-        width: 80%;
-        height: 50px;
+        width: 49%;
+            ;
+            height: 48px;
         background-color: var(--tertiary-color);
         font-size: 25p, x;
         font-weight: bold;
@@ -150,14 +155,14 @@ h2 {
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     
         user-select: none;
         cursor: pointer;
     }
     
     .gameThemesBtn {
-        width: 80%;
+        width: 49%;
         height: 50px;
         background-color: var(--tertiary-color);
         font-size: 25p, x;
@@ -167,7 +172,7 @@ h2 {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
     user-select: none;
     cursor: pointer;
@@ -184,11 +189,62 @@ h2 {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
     user-select: none;
     cursor: pointer;
 }
 .hidden {
     display: none !important;
+}
+.div_btns {
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.scoresDisplay {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background: url('../assets/Map.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    opacity: 0.5;
+
+}
+
+.menuScoresTitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+
+}
+
+.firstPlaceHard {
+    /* width: 90%; */
+    width: 900wv;
+    height: 120px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+
+.firstPlaceMedium {
+    /* width: 90%; */
+    height: 120px;
+    background-color: var(--tertiary-color);
+    border-radius: 20px;
+}
+
+.firstPlaceEasy {
+    /* width: 90%; */
+    height: 120px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
 }

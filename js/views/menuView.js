@@ -4,7 +4,7 @@ import { SCORES } from "../libs/constants.js";
 import { DIFFICULTY } from "../libs/constants.js";
 import { THEMES } from "../libs/constants.js";
 import { CREDITS } from "../libs/constants.js";
-import { div } from "../libs/html.js";
+import { div,p } from "../libs/html.js";
 import { ViewForController } from "./viewForController.js";
 
 export class MenuView extends ViewForController {
@@ -12,14 +12,21 @@ export class MenuView extends ViewForController {
         super(controller, parent);
         this.container.className = 'menuController';
        
+       this.subTittleMenu = p(this.elementContainer,{className: 'subTittleMenu', innerHTML: 'CARD MATCH'});
 
-        this.loginBtn = div(this.elementContainer,{className: 'gameLoginBtn', innerHTML: 'LOGIN', onclick: this.onLoginBtn.bind(this)});
-        this.playBtn = div(this.elementContainer,{className: 'gamePlayBtn', innerHTML: 'PLAY', onclick: this.onPlayBtn.bind(this)});
-        this.scoresBtn = div(this.elementContainer,{className: 'gameScoresBtn', innerHTML: 'SCORES', onclick: this.onScoresBtn.bind(this)});
-        this.difficultyBtn = div(this.elementContainer,{className: 'gameDifficultyBtn', innerHTML: 'DIFFICULTY', onclick: this.onDifficultyBtn.bind(this)});
-        this.themesBtn = div(this.elementContainer,{className: 'gameThemesBtn', innerHTML: 'THEMES', onclick: this.onThemesBtn.bind(this)});
-        this.creditsBtn = div(this.elementContainer,{className: 'gameCreditsBtn', innerHTML: 'CREDITS', onclick: this.onCreditsBtn.bind(this)});
+        this.loginBtn = div(this.elementContainer,{className: 'gamenBtn gameLoginBtn', innerHTML: 'LOGIN', onclick: this.onLoginBtn.bind(this)});
+        this.playBtn = div(this.elementContainer,{className: 'gamenBtn gamePlayBtn', innerHTML: 'PLAY', onclick: this.onPlayBtn.bind(this)});
 
+        this.themesAndScoreBtns =div(this.elementContainer,{className: 'div_btns'});
+        this.scoresBtn = div(this.themesAndScoreBtns,{className: ' gameScoresBtn', innerHTML: 'SCORES', onclick: this.onScoresBtn.bind(this)});
+        this.themesBtn = div(this.themesAndScoreBtns,{className: '  gameThemesBtn', innerHTML: 'THEMES', onclick: this.onThemesBtn.bind(this)});
+        this.difficultyBtn = div(this.elementContainer,{className: '  gameDifficultyBtn', innerHTML: 'DIFFICULTY', onclick: this.onDifficultyBtn.bind(this)});
+        this.creditsBtn = div(this.elementContainer,{className: ' gameCreditsBtn', innerHTML: 'CREDITS', onclick: this.onCreditsBtn.bind(this)});
+        this.scoresDisplay = div(this.elementContainer,{className: ' scoresDisplay'});
+        this.scoresDisplay = p(this.scoresDisplay,{className: ' menuScoresTitle', innerHTML: 'TOP SCORES'});
+        this.firstPlaceHard = div(this.scoresDisplay,{className: ' firstPlaceHard'});
+        this.firstPlaceMedium = div(this.scoresDisplay,{className: ' firstPlaceMedium'});
+        this.firstPlaceEasy = div(this.scoresDisplay,{className: ' firstPlaceEasy'});
     }
 
 onLoginBtn(){
