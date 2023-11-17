@@ -23,6 +23,7 @@ export class PlayController extends Controller {
 
 
 
+
     }
 
 
@@ -38,19 +39,29 @@ onCardSelected(event){
     if(this.cardView1 != null && this.cardView2 != null)return;
     let  cardView = event.detail.cardView;
 
+    console.log(event.detail.cardView)
+
     
 
    
 
-    if(this.cardView1 === null){
+    if(this.cardView1 === null ){
         this.cardView1 = cardView;
         this.cardView1.show();
 
     
-    }else if(this.cardView2 === null){
+    // }else if(this.cardView2 === null){
+    //     this.cardView2 = cardView;
+    //     this.cardView2.show();
+
+    // }
+
+    }else if(this.cardView2 === null && this.cardView1.card.identifier !== cardView.card.identifier){
         this.cardView2 = cardView;
         this.cardView2.show();
 
+    }else{
+        return;
     }
 
     if(this.cardView1 != null && this.cardView2 != null){
@@ -62,7 +73,7 @@ onCardSelected(event){
 
 }
 checkCardViews(){
-    if(this.cardView1.card.id === this.cardView2.card.id){
+    if(this.cardView1.card.id === this.cardView2.card.id ){
        
         this.clearCardView();
 

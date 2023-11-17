@@ -10,7 +10,7 @@ export class CardView extends View{
         this.container.className = 'cardView_normal';
         
         // this.container.classList.add('cardView_normal');
-        // this.imgElement = img(this.container, { src: this.card.src, className: 'cardView_img' });
+       
        
        
         this.container.onclick = this.onCardSelected.bind(this);
@@ -19,7 +19,11 @@ export class CardView extends View{
 
     show(){
         // this.container.classList.add('cardView_show');
+       
+
+    
         this.imgElement = img(this.container, { src: this.card.src, className: 'cardView_img' });
+       
        
     }
     // discovered(){

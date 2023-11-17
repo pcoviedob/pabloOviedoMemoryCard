@@ -43,7 +43,9 @@ updateHUD(moves, time){
 
 showCards(cards){
 
-    cards.forEach(card =>{
+  
+
+    cards.forEach(card=>{
         let cardView = new CardView(this.cardsContainer, card);
 
     })
