@@ -33,11 +33,18 @@ export class PlayView extends ViewForController {
     }
 
 onResetBtn(){
-   
+     const onResetBtnEvent = new CustomEvent("onResetBtnEvent",{
+        bubbles: true,
+        detail:null,
+       });
+       this.container.dispatchEvent(onResetBtnEvent);
+    
 }
+   
+
 updateHUD(moves, time){
     this.movesLbl.innerHTML =`MOVES: ${moves}`;
-    this.timeLbl.innerHTML= `00:00 ${time}`;
+    this.timeLbl.innerHTML= `TIME ${time}`;
     
 }
 
@@ -48,7 +55,9 @@ showCards(cards){
     cards.forEach(card=>{
         let cardView = new CardView(this.cardsContainer, card);
 
-    })
+    });
 }
-
+removeCards(){
+this.cardsContainer.innerHTML ='';
+}
 }

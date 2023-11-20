@@ -8,9 +8,25 @@
 
 
 }
+
 .cardView_img {
-width: 100px;
+    width: 100px;
     height: 100px;
     margin-bottom: 15px;
+    user-select: none;
 }
 
+.cardView_show {}
+
+.no_click {
+    pointer-events: none;
+    cursor: not-allowed;
+    border-radius: 5px;
+    border-top: 8px solid #00f;
+
+    border-right: 8px solid #00f;
+
+    border-bottom: 8px solid #00f;
+
+    border-left: 8px solid #00f;
+}
