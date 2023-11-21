@@ -2,13 +2,13 @@
     --primary-color: #15616D;
     --secondary-color: #FF7D00;
     --tertiary-color: #78290F;
-        --light-color: #FFECD1;
-        --bacground-color: #001524;
+    --light-color: #FFECD1;
+    --bacground-color: #001524;
     --navbar-height: 60px;
     --fade-color: rgb(0, 0, 0, 0.75);
     --card-normal: red;
-        --card-show: rgb(13, 0, 255);
-        --card-discocovered: rgb(9, 255, 0);
+    --card-show: rgb(13, 0, 255);
+    --card-discocovered: rgb(9, 255, 0);
 
 }
 
@@ -70,6 +70,7 @@ h2 {
 
 
 }
+
 .subTittleMenu {
     font-size: 35px;
     color: var(--light-color);
@@ -86,88 +87,89 @@ h2 {
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-            */ margin-bottom: 45px;
-    
-        user-select: none;
-        cursor: pointer;
-    }
-    
-    .gameLoginBtn {
-        width: 80%;
-        height: 50px;
-        background-color: var(--secondary-color);
-        font-size: 25p, x;
-        font-weight: bold;
-        color: var(--light-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    
-        user-select: none;
-        cursor: pointer;
-    }
-    
-    .gamePlayBtn {
-        width: 80%;
-        height: 150px;
-        background-color: var(--primary-color);
-        font-size: 25p, x;
-        font-weight: bold;
-        color: var(--light-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    
-        user-select: none;
-        cursor: pointer;
-    }
-    
-    .gameDifficultyBtn {
-        width: 80%;
-        height: 50px;
-        background-color: var(--light-color);
-        font-size: 25p, x;
-        font-weight: bold;
-        color: var(--tertiary-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    
-        user-select: none;
-        cursor: pointer;
-    }
-    
-    .gameScoresBtn {
-        width: 49%;
-            ;
-            height: 48px;
-        background-color: var(--tertiary-color);
-        font-size: 25p, x;
-        font-weight: bold;
-        color: var(--light-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    
-        user-select: none;
-        cursor: pointer;
-    }
-    
-    .gameThemesBtn {
-        width: 49%;
-        height: 50px;
-        background-color: var(--tertiary-color);
-        font-size: 25p, x;
-        font-weight: bold;
-        color: var(--light-color);
+            */
+    margin-bottom: 45px;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.gameLoginBtn {
+    width: 80%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.gamePlayBtn {
+    width: 80%;
+    height: 150px;
+    background-color: var(--primary-color);
+    font-size: 25p, x;
+    font-weight: bold;
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.gameDifficultyBtn {
+    width: 80%;
+    height: 50px;
+    background-color: var(--light-color);
+    font-size: 25p, x;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.gameScoresBtn {
+    width: 49%;
+    ;
+    height: 48px;
+    background-color: var(--tertiary-color);
+    font-size: 25p, x;
+    font-weight: bold;
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.gameThemesBtn {
+    width: 49%;
+    height: 50px;
+    background-color: var(--tertiary-color);
+    font-size: 25p, x;
+    font-weight: bold;
+    color: var(--light-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,9 +196,11 @@ h2 {
     user-select: none;
     cursor: pointer;
 }
+
 .hidden {
     display: none !important;
 }
+
 .div_btns {
     width: 80%;
     display: flex;
@@ -219,7 +223,7 @@ h2 {
 
 }
 
-.menuScoresTitle {
+.scoresTitle {
     font-size: 50px;
     font-weight: bold;
     color: var(--tertiary-color);
@@ -247,4 +251,9 @@ h2 {
     height: 120px;
     background-color: var(--primary-color);
     border-radius: 20px;
+}
+
+.rudder_img {
+    width: 100px;
+    height: 100px;
 }

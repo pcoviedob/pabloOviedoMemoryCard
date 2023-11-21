@@ -22,8 +22,8 @@ export class MenuView extends ViewForController {
         this.themesBtn = div(this.themesAndScoreBtns,{className: '  gameThemesBtn', innerHTML: 'THEMES', onclick: this.onThemesBtn.bind(this)});
         this.difficultyBtn = div(this.elementContainer,{className: '  gameDifficultyBtn', innerHTML: 'DIFFICULTY', onclick: this.onDifficultyBtn.bind(this)});
         this.creditsBtn = div(this.elementContainer,{className: ' gameCreditsBtn', innerHTML: 'CREDITS', onclick: this.onCreditsBtn.bind(this)});
-        this.scoresDisplay = div(this.elementContainer,{className: ' scoresDisplay'});
-        this.scoresDisplay = p(this.scoresDisplay,{className: ' menuScoresTitle', innerHTML: 'TOP SCORES'});
+        this.scoresDisplay = div(this.elementContainer,{className: 'scoresDisplay'});
+        this.scoresTittle = p(this.scoresDisplay,{className: ' scoresTitle', innerHTML: 'TOP SCORES'});
         this.firstPlaceHard = div(this.scoresDisplay,{className: ' firstPlaceHard'});
         this.firstPlaceMedium = div(this.scoresDisplay,{className: ' firstPlaceMedium'});
         this.firstPlaceEasy = div(this.scoresDisplay,{className: ' firstPlaceEasy'});

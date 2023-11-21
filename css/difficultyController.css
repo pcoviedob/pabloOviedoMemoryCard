@@ -1,0 +1,54 @@
+.difficultyController_tittle {
+
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.difficultyEasyBtn {
+
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    height: 130px;
+    width: 150px;
+    background-color: var(--primary-color);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.difficultyMediumBtn {
+    margin-bottom: 20px;
+
+    height: 100px;
+    width: 220px;
+    background-color: var(--tertiary-color);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.difficultyHardBtn {
+    margin-bottom: 40px;
+    height: 100px;
+    width: 320px;
+    background-color: var(--secondary-color);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}

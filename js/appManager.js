@@ -8,7 +8,7 @@ import { NavbarController } from "./controllers/navbarController/navbarControlle
 import { PlayController } from "./controllers/playController/playController.js";
 import { ScoresController } from "./controllers/scoresController/ScoresController.js";
 import { ThemesController } from "./controllers/themesController/themesController.js";
-import { SCORES } from "./libs/constants.js";
+import { DIFFICULTY_MEDIUM, SCORES } from "./libs/constants.js";
 import { NONE } from "./libs/constants.js";
 import { LOGIN } from "./libs/constants.js";
 import { PLAY } from "./libs/constants.js";
@@ -30,7 +30,12 @@ export class AppManager {
 
         this.menuController = new MenuController(this, this.controllerContainer);
         this.currentController = null;
-        this.showController(PLAY);
+        this.showController(DIFFICULTY);
+
+        if(!localStorage.getItem('difficulty') ){
+             window.localStorage.setItem('difficulty', DIFFICULTY_MEDIUM)
+        }
+
     }
 
     async showController(type){

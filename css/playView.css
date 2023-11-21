@@ -17,22 +17,23 @@
 
 .playView_container {
     width: 100%;
-        height: cal(100% -var(--navbar-height));
-            top: var(--navbar-height);
-            position: fixed;
+    height: cal(100% -var(--navbar-height));
+    top: var(--navbar-height);
+    position: fixed;
 }
 
 .playView_tittle {
     font-size: 40px;
     color: var(--secondary-color);
 }
+
 .gameResetBtn {
     display: flex;
     align-content: center;
     justify-content: center;
     text-align: center;
-        width: 25%;
-        height: 40px;
+    width: 25%;
+    height: 40px;
     border-radius: 10px;
     font-size: 25px;
     color: var(--light-color);
