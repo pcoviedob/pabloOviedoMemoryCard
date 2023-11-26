@@ -15,4 +15,4 @@ export const DIFFICULTY_HARD = 12;
 
 export const THEMES_CHARACTERS='characters';
 export const THEMES_FLAGS='flags';
-export const THEMES_FRUITS='flfruitsags';
+export const THEMES_FRUITS='fruits';

@@ -28,7 +28,7 @@ export class PlayController extends Controller {
 
 
  getCards() {
-        return this.service.getCards();
+        return this.service.getCards(this.appManager.getDifficulty(), this.appManager.getTheme());
     }
 receiveCards(cards){
     this.cards = cards;
@@ -41,12 +41,6 @@ receiveCards(cards){
 }
 
 
-isSelected(){
-     
-
-          
-
-}
 
 onCardSelected(event){
 

@@ -6,10 +6,12 @@ export class PlayService extends Service{
         super(controller);
     }
   
- async getCards() {
+ async getCards(difficulty, theme) {
+  let url = `http://localhost:3000/cards/${difficulty}/${theme}`
   let request = new XMLHttpRequest();
-  request.open('GET', '../js/services/playService/cards.json');
+  request.open('GET', url);
   request.onload = () => {
+    // console.log(request);
     if (request.status === 200) {
       let data = JSON.parse(request.responseText);
 

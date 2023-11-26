@@ -22,12 +22,12 @@ export class ThemesView extends ViewForController {
 
 
 onThemesCharactersBtn(){
-    window.localStorage.setItem(THEMES_CHARACTERS);
+    window.localStorage.setItem('themes',THEMES_CHARACTERS);
 }
 onThemesFlagsBtn(){
-     window.localStorage.setItem(THEMES_FLAGS);
+     window.localStorage.setItem('themes',THEMES_FLAGS);
 }
 onThemesFruitsBtn(){
-     window.localStorage.setItem(THEMES_FRUITS);
+     window.localStorage.setItem('themes',THEMES_FRUITS);
 }
 }

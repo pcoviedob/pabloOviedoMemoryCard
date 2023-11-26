@@ -8,7 +8,7 @@ import { NavbarController } from "./controllers/navbarController/navbarControlle
 import { PlayController } from "./controllers/playController/playController.js";
 import { ScoresController } from "./controllers/scoresController/ScoresController.js";
 import { ThemesController } from "./controllers/themesController/themesController.js";
-import { DIFFICULTY_MEDIUM, SCORES } from "./libs/constants.js";
+import { DIFFICULTY_MEDIUM, SCORES, THEMES_CHARACTERS } from "./libs/constants.js";
 import { NONE } from "./libs/constants.js";
 import { LOGIN } from "./libs/constants.js";
 import { PLAY } from "./libs/constants.js";
@@ -34,6 +34,10 @@ export class AppManager {
 
         if(!localStorage.getItem('difficulty') ){
              window.localStorage.setItem('difficulty', DIFFICULTY_MEDIUM)
+        }
+
+        if(!localStorage.getItem('theme') ){
+             window.localStorage.setItem('themes', THEMES_CHARACTERS)
         }
 
     }
@@ -75,5 +79,17 @@ export class AppManager {
         }
 
     }
+getDifficulty(){
+    
+             return localStorage.getItem('difficulty')
+        
+}
+
+    
+getTheme(){
+    
+             return localStorage.getItem('themes')
+        
+}
 }
 
