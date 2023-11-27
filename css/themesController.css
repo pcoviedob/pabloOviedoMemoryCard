@@ -22,6 +22,15 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.themesCharactersBtn:hover {
+    background-color: #3d929f;
+    color: #292725;
+    transition: 0.5;
 }
 
 .themesFlagsBtn {
@@ -36,10 +45,19 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.themesFlagsBtn:hover {
+    background-color: #784c37;
+    color: #292725;
+    transition: 0.5s;
+
 }
 
 .themesFruitsBtn {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     height: 100px;
     width: 320px;
     background-color: var(--secondary-color);
@@ -50,4 +68,37 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.themesFruitsBtn:hover {
+    background-color: #ed9b72;
+    color: #292725;
+    transition: 0.5s;
+
+}
+
+.themesShipsBtn {
+    margin-bottom: 40px;
+    height: 100px;
+    width: 320px;
+    background-color: var(--light-color);
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.themesShipsBtn:hover {
+    background-color: #805345;
+    color: #292725;
+    transition: 0.5s;
+
 }

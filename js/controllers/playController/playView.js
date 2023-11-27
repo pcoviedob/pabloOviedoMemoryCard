@@ -9,20 +9,23 @@ import { ViewForController } from "../../views/viewForController.js";
 export class PlayView extends ViewForController {
     constructor(controller, parent) {
         super(controller, parent);
-        this.container.className = 'playView_container';
+        // this.container = container;
 
-        
-        let mainHudContainer = div(this.elementContainer, {className:'playController_mainHudContainer'})
-        let hudContainer = div(mainHudContainer, {className:'playController_hudContainer'})
-        let hudContainer2= div(mainHudContainer, {className:'playController_hudContainer2'})
-        let divTittle= div(mainHudContainer, {className:'playController_divTittle'})
+        this.playTittleContainer = div(this.elementContainer, {className:'playTittleContainer'})
+         this.playLbl = p(this.playTittleContainer, {className:'playController_playLbl', innerHTML: 'PLAY'})
+         let hudContainer2 = div(this.elementContainer, {className:'playController_hudContainer'})
+        let hudContainer= div(this.elementContainer, {className:'playController_hudContainer2'})
+       
+       
+        // let divTittle= div(mainHudContainer, {className:'playController_divTittle'})
 
-        this.tittle = p(divTittle, {className:'playView_tittle',innerHTML: 'MEDIUM'})
-        this.timeLbl = p(hudContainer, {className:'playController_timeLbl'})
-        this.playLbl = p(hudContainer, {className:'playController_playLbl', innerHTML: 'PLAY'})
-        this.resetBtn = div(hudContainer,{className: 'gameResetBtn', innerHTML: 'RESET', onclick: this.onResetBtn.bind(this)});
+        // this.tittle = p(divTittle, {className:'playView_tittle',innerHTML: 'MEDIUM'})
+         this.resetBtn = div(hudContainer,{className: 'gameResetBtn', innerHTML: 'RESET', onclick: this.onResetBtn.bind(this)});
+        this.timeLbl = p(hudContainer2, {className:'playController_timeLbl'})
+       
+       
         
-        this.cardsLbl = p(hudContainer2, {className:'playController_cardsLbl',innerHTML: 'CARDS:'})
+        // this.cardsLbl = p(hudContainer2, {className:'playController_cardsLbl',innerHTML: 'CARDS:'})
         this.movesLbl = p(hudContainer2, {className:'playController_movesLbl'})
 
        
@@ -44,7 +47,7 @@ onResetBtn(){
 
 updateHUD(moves, time){
     this.movesLbl.innerHTML =`MOVES: ${moves}`;
-    this.timeLbl.innerHTML= `TIME ${time}`;
+    this.timeLbl.innerHTML= `TIME: ${time}`;
     
 }
 

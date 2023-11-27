@@ -12,7 +12,8 @@ export class MenuView extends ViewForController {
         super(controller, parent);
         this.container.className = 'menuController';
        
-       this.subTittleMenu = p(this.elementContainer,{className: 'subTittleMenu', innerHTML: 'CARD MATCH'});
+    
+       this.subTittleMenu = p(this.elementContainer,{className: 'subTittleMenu', innerHTML: 'MEMORY GAME'});
 
         this.loginBtn = div(this.elementContainer,{className: 'gamenBtn gameLoginBtn', innerHTML: 'LOGIN', onclick: this.onLoginBtn.bind(this)});
         this.playBtn = div(this.elementContainer,{className: 'gamenBtn gamePlayBtn', innerHTML: 'PLAY', onclick: this.onPlayBtn.bind(this)});
@@ -22,11 +23,11 @@ export class MenuView extends ViewForController {
         this.themesBtn = div(this.themesAndScoreBtns,{className: '  gameThemesBtn', innerHTML: 'THEMES', onclick: this.onThemesBtn.bind(this)});
         this.difficultyBtn = div(this.elementContainer,{className: '  gameDifficultyBtn', innerHTML: 'DIFFICULTY', onclick: this.onDifficultyBtn.bind(this)});
         this.creditsBtn = div(this.elementContainer,{className: ' gameCreditsBtn', innerHTML: 'CREDITS', onclick: this.onCreditsBtn.bind(this)});
-        this.scoresDisplay = div(this.elementContainer,{className: 'scoresDisplay'});
-        this.scoresTittle = p(this.scoresDisplay,{className: ' scoresTitle', innerHTML: 'TOP SCORES'});
-        this.firstPlaceHard = div(this.scoresDisplay,{className: ' firstPlaceHard'});
-        this.firstPlaceMedium = div(this.scoresDisplay,{className: ' firstPlaceMedium'});
-        this.firstPlaceEasy = div(this.scoresDisplay,{className: ' firstPlaceEasy'});
+        // this.scoresDisplay = div(this.elementContainer,{className: 'scoresDisplay'});
+        // this.scoresTittle = p(this.scoresDisplay,{className: ' scoresTitle', innerHTML: 'TOP SCORES'});
+        // this.firstPlaceHard = div(this.scoresDisplay,{className: ' firstPlaceHard'});
+        // this.firstPlaceMedium = div(this.scoresDisplay,{className: ' firstPlaceMedium'});
+        // this.firstPlaceEasy = div(this.scoresDisplay,{className: ' firstPlaceEasy'});
     }
 
 onLoginBtn(){

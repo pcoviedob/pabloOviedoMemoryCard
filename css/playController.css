@@ -1,49 +1,56 @@
 .playController_hudContainer {
 
-        display: flex;
-        align-content: center;
-            justify-content: space-around;
-            width: 100%;
-            height: 60px;
-        }
-        
-        .playController_hudContainer2 {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            width: 100%;
-        }
-        
-        .playController_mainHudContainer {
-            width: 100%;
-            height: cal(30% -var(--navbar-height));
-            display: flex;
-            align-content: center;
-            justify-content: center;
-            flex-direction: column;/
-            }
-            
-            .playController_cardsLbl {
-                width: 50%;
-                font-size: 30px;
-                color: var(--secondary-color);
-            }
-            
-            .playController_movesLbl {
-            
-                width: 50%;
-                font-size: 30px;
-                color: var(--secondary-color);
-            }
-            
-            .playController_timeLbl {
-                font-size: 40px;
-                color: var(--secondary-color);
-            }
-            
-            .playController_playLbl {
-                font-size: 60px;
-                color: var(--secondary-color);
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 90%;
+    /* height: 60px; */
+    margin-bottom: 15px;
+
+}
+
+.playController_hudContainer2 {
+
+
+    display: flex;
+    justify-content: end;
+    /* text-align: right; */
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.playController_elementContainer {
+
+    margin-bottom: -90px;
+    width: 100%;
+    height: cal(100% -var(--navbar-height));
+    display: flex;
+    align-content: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.playController_cardsLbl {
+    width: 50%;
+    font-size: 30px;
+    color: var(--secondary-color);
+}
+
+.playController_movesLbl {
+
+    font-size: 20px;
+    color: var(--secondary-color);
+
+}
+
+.playController_timeLbl {
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.playController_playLbl {
+    font-size: 60px;
+    color: var(--secondary-color);
 }
 
 .playController_divTittle {
@@ -51,6 +58,7 @@
     align-content: center;
     justify-content: center;
 }
+
 .playController_cardsLbl {
 
     width: 30px;
@@ -63,8 +71,8 @@
 }
 
 .playController_movesLbl {
-    width: 30px;
-    font-size: 30px;
+    /* width: 30px; */
+    font-size: 25px;
 }
 
 .playController_playLbl {
@@ -73,16 +81,15 @@
 }
 
 .playController_timeLbl {
-    width: 30px;
-    font-size: 30px;
+    /* width: 0px; */
+    font-size: 25px;
 }
 
 .playController_cardsContainer {
-    /* margin-top: -340px; */
-        display: flex;
-        align-content: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     width: 90%;
-    
+
 }

@@ -1,5 +1,5 @@
 
-import { THEMES_CHARACTERS, THEMES_FLAGS, THEMES_FRUITS } from "../../libs/constants.js";
+import { THEMES_CHARACTERS, THEMES_FLAGS, THEMES_FRUITS, THEMES_SHIPS } from "../../libs/constants.js";
 import { div, p, img } from "../../libs/html.js";
 import { ViewForController } from "../../views/viewForController.js";
 
@@ -15,6 +15,7 @@ export class ThemesView extends ViewForController {
         this.themesCharactersBtn = div(this.elementContainer,{className: 'themesCharactersBtn', innerHTML: 'CHARACTERS', onclick: this.onThemesCharactersBtn.bind(this)});
         this.themesFlagsBtn = div(this.elementContainer,{className: 'themesFlagsBtn', innerHTML: 'FLAGS', onclick: this.onThemesFlagsBtn.bind(this)});
         this.themesFruitsBtn = div(this.elementContainer,{className: 'themesFruitsBtn', innerHTML: 'FRUITS', onclick: this.onThemesFruitsBtn.bind(this)});
+        this.themesShipssBtn = div(this.elementContainer,{className: 'themesShipsBtn', innerHTML: 'SHIPS', onclick: this.onThemesShipsBtn.bind(this)});
         this.rudder_Img = img(this.elementContainer,{src: '../assets/timon.png', className: 'rudder_img'});
         this.setStartPosition();
         this.moveIn();
@@ -29,5 +30,9 @@ onThemesFlagsBtn(){
 }
 onThemesFruitsBtn(){
      window.localStorage.setItem('themes',THEMES_FRUITS);
+}
+
+onThemesShipsBtn(){
+     window.localStorage.setItem('themes',THEMES_SHIPS);
 }
 }

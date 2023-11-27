@@ -22,7 +22,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
 }
+
+.difficultyEasyBtn:hover {
+    background-color: #3d929f;
+    color: #292725;
+    transition: 0.5;
+}
+
+
 
 .difficultyMediumBtn {
     margin-bottom: 20px;
@@ -37,7 +47,17 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
 }
+
+.difficultyMediumBtn:hover {
+    background-color: #784c37;
+    color: #292725;
+    transition: 0.5s;
+
+}
+
 
 .difficultyHardBtn {
     margin-bottom: 40px;
@@ -51,4 +71,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.difficultyHardBtn:hover {
+    background-color: #ed9b72;
+    color: #292725;
+    transition: 0.5s;
+
 }

@@ -72,7 +72,7 @@ h2 {
 }
 
 .subTittleMenu {
-    font-size: 35px;
+    font-size: 30px;
     color: var(--light-color);
 }
 
@@ -95,6 +95,7 @@ h2 {
 }
 
 .gameLoginBtn {
+    margin-top: 5px;
     width: 80%;
     height: 50px;
     background-color: var(--secondary-color);
@@ -111,11 +112,20 @@ h2 {
     cursor: pointer;
 }
 
+.gameLoginBtn:hover {
+    background-color: #ed9b72;
+    color: #292725;
+    transition: 0.5s;
+
+
+
+}
+
 .gamePlayBtn {
     width: 80%;
     height: 150px;
     background-color: var(--primary-color);
-    font-size: 25p, x;
+    font-size: 25px;
     font-weight: bold;
     color: var(--light-color);
     display: flex;
@@ -128,11 +138,17 @@ h2 {
     cursor: pointer;
 }
 
+.gamePlayBtn:hover {
+    background-color: #3d929f;
+    color: #292725;
+    transition: 0.5s;
+}
+
 .gameDifficultyBtn {
     width: 80%;
     height: 50px;
     background-color: var(--light-color);
-    font-size: 25p, x;
+    font-size: 25px;
     font-weight: bold;
     color: var(--tertiary-color);
     display: flex;
@@ -145,12 +161,18 @@ h2 {
     cursor: pointer;
 }
 
+.gameDifficultyBtn:hover {
+    background-color: #805345;
+    color: #292725;
+    transition: 0.5s;
+}
+
+
 .gameScoresBtn {
     width: 49%;
-    ;
-    height: 48px;
+    height: 50px;
     background-color: var(--tertiary-color);
-    font-size: 25p, x;
+    font-size: 25px;
     font-weight: bold;
     color: var(--light-color);
     display: flex;
@@ -161,13 +183,21 @@ h2 {
 
     user-select: none;
     cursor: pointer;
+}
+
+.gameScoresBtn:hover {
+
+    background-color: #784c37;
+    color: #292725;
+    transition: 0.5s;
+
 }
 
 .gameThemesBtn {
     width: 49%;
     height: 50px;
     background-color: var(--tertiary-color);
-    font-size: 25p, x;
+    font-size: 25px;
     font-weight: bold;
     color: var(--light-color);
     display: flex;
@@ -180,11 +210,18 @@ h2 {
     cursor: pointer;
 }
 
+.gameThemesBtn:hover {
+    background-color: #784c37;
+    color: #292725;
+    transition: 0.5s;
+
+}
+
 .gameCreditsBtn {
     width: 80%;
     height: 50px;
     background-color: var(--secondary-color);
-    font-size: 25p, x;
+    font-size: 25px;
     font-weight: bold;
     color: var(--light-color);
     display: flex;
@@ -195,6 +232,15 @@ h2 {
 
     user-select: none;
     cursor: pointer;
+}
+
+.gameCreditsBtn:hover {
+    background-color: #ed9b72;
+    color: #292725;
+    transition: 0.5s;
+
+
+
 }
 
 .hidden {
@@ -210,14 +256,14 @@ h2 {
 
 .scoresDisplay {
     width: 100%;
-    height: 50%;
+    height: 40%;
     position: relative;
     background: url('../assets/Map.jpg') center/cover no-repeat;
     color: #fff;
     padding: 20px;
     text-align: center;
     display: flex;
-    align-content: space-around;
+    align-content: start;
     justify-content: center;
     opacity: 0.5;
 
