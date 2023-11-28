@@ -30,7 +30,7 @@ export class AppManager {
 
         this.menuController = new MenuController(this, this.controllerContainer);
         this.currentController = null;
-        this.showController(CREDITS);
+        this.showController(MENU);
 
         if(!localStorage.getItem('difficulty') ){
              window.localStorage.setItem('difficulty', DIFFICULTY_MEDIUM)
