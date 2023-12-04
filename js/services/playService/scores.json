@@ -1,0 +1,88 @@
+{
+    "scores": {
+        "score1": {
+            "username": "juan",
+            "clicks": "300",
+            "time": "304",
+            "difficulty": "low",
+            "score": "234"
+        },
+        "score2": {
+            "username": "pedro",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "134"
+        },
+        "score3": {
+            "username": "Maria",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "234"
+        },
+        "score4": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        },
+        "score5": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        },
+        "score6": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        },
+        "score7": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        },
+        "score8": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        },
+        "score9": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        },
+        "score10": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        },
+        "score11": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        },
+        "score12": {
+            "username": "Hellen",
+            "clicks": "200",
+            "time": "304",
+            "difficulty": "low",
+            "score": "50"
+        }
+    }
+}

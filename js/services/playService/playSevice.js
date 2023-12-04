@@ -7,8 +7,8 @@ export class PlayService extends Service{
     }
   
  async getCards(difficulty, theme) {
-  let url = `https://pablo-oviedo-memory-card-backend-lwiyy42z8.vercel.app/cards/${difficulty}/${theme}`;
-  // let url = `http://localhost:3000/cards/${difficulty}/${theme}`
+  // let url = `https://pablo-oviedo-memory-card-backend-39a1.vercel.app/cards/${difficulty}/${theme}`;
+  let url = `http://localhost:3000/cards/${difficulty}/${theme}`
   let request = new XMLHttpRequest();
   request.open('GET', url);
   request.onload = () => {
