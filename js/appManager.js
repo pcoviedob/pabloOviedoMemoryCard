@@ -65,7 +65,7 @@ export class AppManager {
             case SCORES:
                 this.currentController = new ScoresController(this, this.controllerContainer)
                 break;
-                case DIFFICULTY:
+            case DIFFICULTY:
                     this.currentController = new DifficultyController(this, this.controllerContainer)
                 break;
             case THEMES:

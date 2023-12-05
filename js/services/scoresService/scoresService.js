@@ -1,4 +1,5 @@
-import { Service } from "../service";
+import { Score } from "../../models/score.js";
+import { Service } from "../service.js";
 
 export class ScoresService extends Service{
     constructor(controller){
@@ -6,28 +7,25 @@ export class ScoresService extends Service{
     }
   
  getScores() {
-  // let url = `https://pablo-oviedo-memory-card-backend-39a1.vercel.app/scores`;
-  let url = `http://localhost:3000/scores`;
+  let url = `https://pablo-oviedo-memory-card-backend-39a1.vercel.app/scores`;
+  // let url = `http://localhost:3000/scores`;
   let request = new XMLHttpRequest();
   request.open('GET', url);
   request.onload = () => {
-    // console.log(request);
-    if (request.status === 200) {
-      let data = JSON.parse(request.responseText);
+    console.log(request);
+      let data = JSON.parse(request.response);
 
-    //   let cards =[];
-    //   data.cards.forEach((cardData,i )=> {
-    //     let card = new Card(i,cardData.id, cardData.src, cardData.selected)
-    //     cards.push(card)
+      let scores =[];
+      data.forEach((scoreData,i )=> {
+        let score = new Score(scoreData.clicks, scoreData.difficulty, scoreData.score, scoreData.time, scoreData.username);
+        scores.push(score);
                
-    //   });
-    //   this.controller.receiveCards(cards);
-    // } else {
-    //   console.error('Error al cargar el archivo JSON');
-    // }
-  };
+      });
+      this.controller.receiveScores(scores); 
+      
+  }
   request.send();
-}
+
 
 }
 }

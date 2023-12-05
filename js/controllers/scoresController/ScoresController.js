@@ -13,6 +13,9 @@ export class ScoresController extends Controller {
          this.service = new ScoresService(this);
          this.service.getScores();
     }
+    receiveScores(scores){
+        console.log(scores);
+    }
 
 
 }
