@@ -9,7 +9,7 @@ import { ViewForController } from "../../views/viewForController.js";
 export class PlayView extends ViewForController {
     constructor(controller, parent) {
         super(controller, parent);
-        // this.container = container;
+       
 
         this.playTittleContainer = div(this.elementContainer, {className:'playTittleContainer'})
          this.playLbl = p(this.playTittleContainer, {className:'playController_playLbl', innerHTML: 'PLAY'})
@@ -17,16 +17,10 @@ export class PlayView extends ViewForController {
         let hudContainer= div(this.elementContainer, {className:'playController_hudContainer2'})
        
        
-        // let divTittle= div(mainHudContainer, {className:'playController_divTittle'})
-
-        // this.tittle = p(divTittle, {className:'playView_tittle',innerHTML: 'MEDIUM'})
+        
          this.resetBtn = div(hudContainer,{className: 'gameResetBtn', innerHTML: 'RESET', onclick: this.onResetBtn.bind(this)});
         this.timeLbl = p(hudContainer2, {className:'playController_timeLbl'})
-       
-       
-        
-        // this.cardsLbl = p(hudContainer2, {className:'playController_cardsLbl',innerHTML: 'CARDS:'})
-        this.movesLbl = p(hudContainer2, {className:'playController_movesLbl'})
+         this.movesLbl = p(hudContainer2, {className:'playController_movesLbl'})
 
        
         this.cardsContainer = div(this.elementContainer,{ className: 'playController_cardsContainer'})

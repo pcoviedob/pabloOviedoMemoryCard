@@ -1,5 +1,4 @@
 
-// import { LoginController } from "./controllers/loginController/loginController.js";
 import { CreditsController } from "./controllers/creditsController/creditsController.js";
 import { DifficultyController } from "./controllers/difficultyController/difficultyController.js";
 import { LoginController } from "./controllers/loginController/loginController.js";
@@ -21,7 +20,7 @@ import { div, p, img } from "./libs/html.js";
 export class AppManager {
     constructor() {
         this.isDevelopment = false;
-        this.mainContainer = div(document.body, { className: 'mainContainer' })
+        this.mainContainer = div(document.body, {className: 'mainContainer'})
 
         // this.navbarConroller = div(this.mainContainer,{className: 'navbarConroller'})
         this.navbarController = new NavbarController(this, this.mainContainer);
@@ -60,7 +59,7 @@ export class AppManager {
                 break;
             case PLAY:
                 this.currentController = new PlayController(this, this.controllerContainer)
-                await this.currentController.getCards();
+                this.currentController.getCards();
                 break;
             case SCORES:
                 this.currentController = new ScoresController(this, this.controllerContainer)

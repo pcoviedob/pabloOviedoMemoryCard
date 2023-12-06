@@ -2,3 +2,102 @@
     font-size: 35px;
     color: var(--secondary-color);
 }
+
+.scoreController_scoreHardContainer {
+
+    width: 90%;
+    height: auto;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.scoreController_difficultyHardLbl {
+    font-size: 25px;
+    color: var(--background-color);
+
+}
+
+.scoreController_scoreHardLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
+
+.scoreController_timeHardLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
+
+.scoreController_usernameHardLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
+
+.scoreController_movesHardLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
+
+
+.scoreController_scoreMediumContainer {
+    width: 90%;
+    height: auto;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+.scoreController_difficultyMediumLbl {
+    font-size: 25px;
+    color: var(--light-color);
+}
+
+.scoreController_scoreMediumLbl {
+    font-size: 25px;
+    color: var(--light-color);
+}
+
+.scoreController_timeMediumLbl {
+    font-size: 25px;
+    color: var(--light-color);
+}
+
+.scoreController_usernameMediumLbl {
+    font-size: 25px;
+    color: var(--light-color);
+}
+
+.scoreController_movesMediumLbl {
+    font-size: 25px;
+    color: var(--light-color);
+}
+
+.scoreController_scoreEasyContainer {
+    width: 90%;
+    height: auto;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.scoreController_difficultyEasyLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
+
+.scoreController_scoreEasyLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
+
+.scoreController_timeEasyLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
+
+.scoreController_usernameEasyLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
+
+.scoreController_movesEasyLbl {
+    font-size: 25px;
+    color: var(--background-color);
+}
