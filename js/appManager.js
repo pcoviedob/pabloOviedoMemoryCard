@@ -20,7 +20,7 @@ import { div, p, img } from "./libs/html.js";
 
 export class AppManager {
     constructor() {
-
+        this.isDevelopment = false;
         this.mainContainer = div(document.body, { className: 'mainContainer' })
 
         // this.navbarConroller = div(this.mainContainer,{className: 'navbarConroller'})
@@ -90,6 +90,9 @@ getTheme(){
     
              return localStorage.getItem('themes')
         
+}
+getBaseURL(){
+    return this.isDevelopment ? 'http://localhost:3000/' : 'https://pablo-oviedo-memory-card-backend-39a1.vercel.app/';
 }
 }
 

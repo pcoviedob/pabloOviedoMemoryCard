@@ -28,7 +28,7 @@ export class PlayController extends Controller {
 
 
  getCards() {
-        return this.service.getCards(this.appManager.getDifficulty(), this.appManager.getTheme());
+        return this.service.getCards(this.appManager.getDifficulty(), this.appManager.getTheme(), this.appManager.getBaseURL());
     }
 receiveCards(cards){
     this.cards = cards;
@@ -99,6 +99,7 @@ checkCardViews(){
             console.log("GAME COMPLETED")
             window.clearInterval(this.playingTimer);
             this.playingTimer=null;
+            this.service.sendScore({});
             
 
         }
@@ -153,7 +154,7 @@ resetGame(){
     this.showingTimer = null;
     this.updateHUD();
     this.view.removeCards();
-    this.getCards();
+    this.getCards(this.appManager.getDifficulty(), this.appManager.getTheme(), this.appManager.getBaseURL());
     
 
 }

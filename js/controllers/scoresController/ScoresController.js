@@ -11,7 +11,7 @@ export class ScoresController extends Controller {
         super(appManager, parent);
         this.view = new ScoresView(this, parent);
          this.service = new ScoresService(this);
-         this.service.getScores();
+         this.service.getScores(this.appManager.getBaseURL());
     }
     receiveScores(scores){
         console.log(scores);

@@ -6,26 +6,29 @@ export class ScoresService extends Service{
         super(controller);
     }
   
- getScores() {
-  let url = `https://pablo-oviedo-memory-card-backend-39a1.vercel.app/scores`;
+ getScores(baseURL) {
+  // let url = `https://pablo-oviedo-memory-card-backend-39a1.vercel.app/scores`;
   // let url = `http://localhost:3000/scores`;
-  let request = new XMLHttpRequest();
-  request.open('GET', url);
-  request.onload = () => {
-    console.log(request);
-      let data = JSON.parse(request.response);
+  let url = `${baseURL}scores`;
 
+  fetch(url).then(response =>{
+    response.json().then(data =>{
       let scores =[];
-      data.forEach((scoreData,i )=> {
+      data.forEach((scoreData,i) =>{
         let score = new Score(scoreData.clicks, scoreData.difficulty, scoreData.score, scoreData.time, scoreData.username);
-        scores.push(score);
-               
+         scores.push(score);
       });
-      this.controller.receiveScores(scores); 
-      
+      this.controller.receiveScores(scores);
+
+    }).catch(error => {
+        console.log('Error parsing scores:',error );
+    });
+  }).catch(error => {
+        console.log('Error requesting scores:',error );
+    });
+  
+        
   }
-  request.send();
+ 
 
-
-}
 }
