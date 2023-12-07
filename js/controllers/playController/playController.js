@@ -1,4 +1,5 @@
 
+import { Score } from "../../models/score.js";
 import { PlayService } from "../../services/playService/playSevice.js";
 import { Controller } from "../controller.js";
 import { PlayView } from "./playView.js";
@@ -99,7 +100,9 @@ checkCardViews(){
             console.log("GAME COMPLETED")
             window.clearInterval(this.playingTimer);
             this.playingTimer=null;
-            this.service.sendScore({});
+            let value = this.clicksCounter + this.timeCounter;
+            let score = new Score(this.clicksCounter, this.appManager.getDifficulty(), value, this.timeCounter, this.appManager.getUsername());
+            this.service.sendScore(score);
             
 
         }

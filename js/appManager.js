@@ -87,11 +87,19 @@ getDifficulty(){
     
 getTheme(){
     
-             return localStorage.getItem('themes')
+             return localStorage.getItem('username');
         
 }
 getBaseURL(){
     return this.isDevelopment ? 'http://localhost:3000/' : 'https://pablo-oviedo-memory-card-backend-39a1.vercel.app/';
 }
+
+    
+getUsername(){
+    
+             return localStorage.getItem('themes')
+        
+}
+
 }
 
