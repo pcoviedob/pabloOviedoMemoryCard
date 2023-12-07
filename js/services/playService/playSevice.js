@@ -6,30 +6,48 @@ export class PlayService extends Service{
         super(controller);
     }
   
- 
-  
-
-  getCards(difficulty, theme,baseURL) {
+  async getCards(difficulty, theme,baseURL) {
   // let url = `https://pablo-oviedo-memory-card-backend-39a1.vercel.app/cards/${difficulty}/${theme}`;
   // let url = `http://localhost:3000/cards/${difficulty}/${theme}`;
   let url = `${baseURL}cards/${difficulty}/${theme}`;
 
-  fetch(url).then(response =>{
-    response.json().then(data =>{
-     let cards =[];
-      data.cards.forEach((cardData,i )=> {
-        let card = new Card(i,cardData.id, cardData.src, cardData.selected)
+  // fetch(url).then(response =>{
+  //   response.json().then(data =>{
+  //    let cards =[];
+  //     data.cards.forEach((cardData,i )=> {
+  //       let card = new Card(i,cardData.id, cardData.src, cardData.selected)
+  //       cards.push(card);
+  //     });
+  //     this.controller.receiveCards(cards);
+
+  //   }).catch(error => {
+  //       console.log('Error parsing json:',error );
+  //   });
+  // }).catch(error => {
+  //       console.log('Error requesting Cards:',error );
+  //   });
+
+  // }
+
+  try {
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch cards. Status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      let cards = [];
+
+      data.cards.forEach((cardData, i) => {
+        let card = new Card(i, cardData.id, cardData.src, cardData.selected);
         cards.push(card);
       });
+
       this.controller.receiveCards(cards);
-
-    }).catch(error => {
-        console.log('Error parsing json:',error );
-    });
-  }).catch(error => {
-        console.log('Error requesting Cards:',error );
-    });
-
+    } catch (error) {
+      console.error('Error fetching cards:', error.message);
+    }
   }
 
 sendScore(score,baseURL){
