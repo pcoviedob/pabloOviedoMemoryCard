@@ -5,7 +5,7 @@ import { LoginController } from "./controllers/loginController/loginController.j
 import { MenuController } from "./controllers/navbarController/menuController/menuController.js";
 import { NavbarController } from "./controllers/navbarController/navbarController/navbarController.js";
 import { PlayController } from "./controllers/playController/playController.js";
-import { ScoresController } from "./controllers/scoresController/ScoresController.js";
+import { ScoresController } from "./controllers/scoresController/scoresController.js";
 import { ThemesController } from "./controllers/themesController/themesController.js";
 import { DIFFICULTY_MEDIUM, SCORES, THEMES_CHARACTERS } from "./libs/constants.js";
 import { NONE } from "./libs/constants.js";

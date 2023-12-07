@@ -15,6 +15,7 @@ export class ScoresController extends Controller {
     }
     receiveScores(scores){
         console.log(scores);
+        // View show scores
     }
 
 
