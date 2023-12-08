@@ -101,8 +101,9 @@ checkCardViews(){
             window.clearInterval(this.playingTimer);
             this.playingTimer=null;
             let value = this.clicksCounter + this.timeCounter;
-            let score = new Score(this.clicksCounter, this.appManager.getDifficulty(), value, this.timeCounter, this.appManager.getUsername());
-            this.service.sendScore(score);
+            let score = new Score(this.clicksCounter, this.appManager.getDifficulty(),
+             value, this.timeCounter, this.appManager.getUsername());
+            this.service.sendScore(this.appManager.getBaseURL(),score);
             
 
         }
