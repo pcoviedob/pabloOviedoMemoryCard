@@ -80,14 +80,14 @@ export class AppManager {
     }
 getDifficulty(){
     
-             return localStorage.getItem('difficulty')
+    return localStorage.getItem('difficulty')
         
 }
 
     
 getTheme(){
     
-             return localStorage.getItem('themes');
+    return localStorage.getItem('themes');
         
 }
 getBaseURL(){
@@ -97,7 +97,7 @@ getBaseURL(){
     
 getUsername(){
     
-             return localStorage.getItem('username')
+    return localStorage.getItem('username')
         
 }
 

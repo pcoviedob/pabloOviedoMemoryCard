@@ -34,7 +34,7 @@ export class PlayController extends Controller {
 receiveCards(cards){
     this.cards = cards;
     this.view.showCards(this.cards);
-     this.timeCounter = 0;
+    this.timeCounter = 0;
     this.clicksCounter =0;
     window.clearInterval(this.playingTimer);
     this.playingTimer=null;
