@@ -32,23 +32,26 @@
 
 .playController_cardsLbl {
     width: 50%;
+    font-family: 'Jomhuria', serif;
     font-size: 30px;
     color: var(--secondary-color);
 }
 
 .playController_movesLbl {
-
+    font-family: 'Jomhuria', serif;
     font-size: 20px;
     color: var(--secondary-color);
 
 }
 
 .playController_timeLbl {
+    font-family: 'Jomhuria', serif;
     font-size: 20px;
     color: var(--secondary-color);
 }
 
 .playController_playLbl {
+    font-family: 'Jomhuria', serif;
     font-size: 60px;
     color: var(--secondary-color);
 }
@@ -62,27 +65,32 @@
 .playController_cardsLbl {
 
     width: 30px;
+    font-family: 'Jomhuria', serif;
     font-size: 30px;
 }
 
 .playController_resetBtn {
     width: 30px;
+    font-family: 'Jomhuria', serif;
     font-size: 30px;
 }
 
 .playController_movesLbl {
     /* width: 30px; */
-    font-size: 25px;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
 }
 
 .playController_playLbl {
     width: 30px;
-    font-size: 50px;
+    font-family: 'Jomhuria', serif;
+    font-size: 90px;
 }
 
 .playController_timeLbl {
     /* width: 0px; */
-    font-size: 25px;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
 }
 
 .playController_cardsContainer {

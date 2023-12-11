@@ -15,7 +15,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Jomhuria', serif;
 }
 
 h1 {
@@ -72,7 +72,8 @@ h2 {
 }
 
 .subTittleMenu {
-    font-size: 30px;
+    font-family: 'Jomhuria', serif;
+    font-size: 70px;
     color: var(--light-color);
 }
 
@@ -99,8 +100,8 @@ h2 {
     width: 80%;
     height: 50px;
     background-color: var(--secondary-color);
-    font-size: 25px;
-    font-weight: bold;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
     color: var(--light-color);
     display: flex;
     justify-content: center;
@@ -125,8 +126,8 @@ h2 {
     width: 80%;
     height: 150px;
     background-color: var(--primary-color);
-    font-size: 25px;
-    font-weight: bold;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
     color: var(--light-color);
     display: flex;
     justify-content: center;
@@ -148,8 +149,8 @@ h2 {
     width: 80%;
     height: 50px;
     background-color: var(--light-color);
-    font-size: 25px;
-    font-weight: bold;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
     color: var(--tertiary-color);
     display: flex;
     justify-content: center;
@@ -172,8 +173,8 @@ h2 {
     width: 49%;
     height: 50px;
     background-color: var(--tertiary-color);
-    font-size: 25px;
-    font-weight: bold;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
     color: var(--light-color);
     display: flex;
     justify-content: center;
@@ -197,8 +198,8 @@ h2 {
     width: 49%;
     height: 50px;
     background-color: var(--tertiary-color);
-    font-size: 25px;
-    font-weight: bold;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
     color: var(--light-color);
     display: flex;
     justify-content: center;
@@ -221,8 +222,8 @@ h2 {
     width: 80%;
     height: 50px;
     background-color: var(--secondary-color);
-    font-size: 25px;
-    font-weight: bold;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
     color: var(--light-color);
     display: flex;
     justify-content: center;
@@ -270,6 +271,7 @@ h2 {
 }
 
 .scoresTitle {
+    font-family: 'Jomhuria', serif;
     font-size: 50px;
     font-weight: bold;
     color: var(--tertiary-color);

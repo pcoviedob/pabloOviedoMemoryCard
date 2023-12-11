@@ -1,10 +1,12 @@
 .creditsTittle {
-    font-size: 35px;
+    font-family: 'Jomhuria', serif;
+    font-size: 70px;
     color: var(--secondary-color);
 }
 
 .creditsSubtittle {
-    font-size: 25px;
+    font-family: 'Jomhuria', serif;
+    font-size: 50px;
     color: var(--light-color);
 }
 

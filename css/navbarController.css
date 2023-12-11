@@ -26,6 +26,7 @@
 }
 
 .gameTittle {
+    font-family: 'Jomhuria', serif;
     font-size: 35px;
     color: var(--background-color);
 }
