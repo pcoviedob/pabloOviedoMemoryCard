@@ -101,3 +101,8 @@
     font-size: 25px;
     color: var(--background-color);
 }
+
+.scoreController_scoreHardButtonDown {
+    width: 30px;
+    height: 30px;
+}
